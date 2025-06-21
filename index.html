@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-glow"></div>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div class="last-answer" id="lastAnswer">Ans: 0</div>
+                <div class="result" id="result">0</div>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn function" data-action="clear">AC</button>
+                <button class="btn function" data-action="delete">DE</button>
+                <button class="btn function" data-action="ans">Ans</button>
+                <button class="btn operator" data-operator="÷">÷</button>
+                
+                <button class="btn number" data-number="7">7</button>
+                <button class="btn number" data-number="8">8</button>
+                <button class="btn number" data-number="9">9</button>
+                <button class="btn operator" data-operator="×">×</button>
+                
+                <button class="btn number" data-number="4">4</button>
+                <button class="btn number" data-number="5">5</button>
+                <button class="btn number" data-number="6">6</button>
+                <button class="btn operator" data-operator="-">-</button>
+                
+                <button class="btn number" data-number="1">1</button>
+                <button class="btn number" data-number="2">2</button>
+                <button class="btn number" data-number="3">3</button>
+                <button class="btn operator" data-operator="+">+</button>
+                
+                <button class="btn number double-wide" data-number="0">00</button>
+                <button class="btn number" data-number="0">0</button>
+                <button class="btn number" data-decimal data-action="decimal">.</button>
+                <button class="btn equals" data-equals>=</button>
+            </div>
+            <div class="extra-buttons-row">
+                <button class="btn function" data-action="percent">%</button>
+                <button class="btn function" data-action="toggle-sign">±</button>
+                <button class="btn function" data-action="reciprocal">1/x</button>
+                <button class="btn function" data-action="square">x²</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scrpit.js"></script>
+</body>
+</html>
